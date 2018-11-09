@@ -35,16 +35,16 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loan</a>
+                            <a class="nav-link" href="/barrowerinfo">Loan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Partners</a>
+                            <a class="nav-link" href="/barrowersource">Partners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promos</a>
+                            <a class="nav-link" href="/">Promos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">News & Blogs</a>
@@ -67,8 +67,8 @@
                                     My Account <span class="caret"></span>
                                 </a>
 
+                                
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('/barrowerinfo') }}">My Information</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

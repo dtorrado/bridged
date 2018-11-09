@@ -33,6 +33,15 @@ body, html {
 	cursor:pointer;
 }
 
+#profile{
+	height: 80%;
+	width: 80%;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+
 /*** HOME ***/
 
 #hero{

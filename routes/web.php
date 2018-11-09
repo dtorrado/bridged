@@ -15,10 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-Route::resource('/barrowerinfo', 'BarrowerController')->middleware('verified');
+Route::get('/barrowerinfo', 'BarrowerController@home')->middleware('verified');
+Route::get('/barrowersource', 'BarrowerController@source')->middleware('verified');
+Route::get('/barrowerattachments', 'BarrowerController@attach')->middleware('verified');
+
+Route::get('/creditorhome', 'CreditorController@home')->middleware('verified');
+Route::get('/creditorprofile', 'CreditorController@profile')->middleware('verified');
 Route::resource('/offers','OfferController')->middleware('verified');
 
 Route::prefix('admin')->group(function() {

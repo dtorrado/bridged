@@ -18,6 +18,9 @@ class BarrowerController extends Controller
     {
         return view('profile/myattachements');
     }
+    {
+        return view('profile/inprogress');
+    }
     public function create()
     {
         //
